@@ -10,9 +10,9 @@
 		<relativePath />
 	</parent>
 	<groupId>com.demo</groupId>
-	<artifactId>BankApplicationBackend</artifactId>
+	<artifactId>BookApplicationBackend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BankApplicationBackend</name>
+	<name>BookApplicationBackend</name>
 
 	<properties>
 		<java.version>1.8</java.version>

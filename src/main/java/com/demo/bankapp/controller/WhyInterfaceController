@@ -1,0 +1,20 @@
+https://stackoverflow.com/questions/69373298/spring-interface-driven-controllers-usage
+
+Links: https://www.baeldung.com/spring-interface-driven-controllers
+
+------------------------------------------------------------------------------------------
+
+you can implement one interface with same methods in two controllers:
+
+@RequestMapping("/oldversioncontroller/book")
+public class BookOldController implements BookOperations {...}
+
+@RequestMapping("/newversioncontroller/book")
+public class BookNewController implements BookOperations {...}
+
+
+-------------------------------------------------------------------------------------------
+
+If you're using Swagger annotations it's very likely that your controller
+might be hard to read. Using interfaces you can pass all this annotations
+to the interface and maintain readability in the controller implementation.
